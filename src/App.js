@@ -5,9 +5,9 @@ function App() {
   return (
     <>
       <div className="todo-app">
+        <div className="signature">Napat Jaiyim</div>
         <TodoList />
       </div>
-      <div className="signature">Napat Jaiyim</div>
     </>
   );
 }

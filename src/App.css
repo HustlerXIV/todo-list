@@ -9,7 +9,6 @@
 body {
   background-color: #eec0c6;
   background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
-
   width: 100vw;
   height: 100vh;
 }
@@ -21,9 +20,10 @@ body {
   min-height: 600px;
   background: #161a2b;
   text-align: center;
-  margin: 128px auto;
+  margin: 128px auto 0px auto;
   border-radius: 10px;
   padding-bottom: 32px;
+  position: relative;
 }
 
 h1 {
@@ -134,7 +134,8 @@ h1 {
 .signature {
   color: #fff;
   position: absolute;
-  bottom: 10%;
-  left: 50%;
   font-weight: bold;
+  bottom: 10%;
+  left: 0;
+  right: 0;
 }
