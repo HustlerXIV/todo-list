@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import TodoList from "./TodoList";
 import { RiCloseCircleLine } from "react-icons/ri";
-import { TiEdit } from "react-icons/ti";
+import { BsCheckCircle, BsPencilSquare } from "react-icons/bs";
+
 import TodoForm from "./TodoForm";
 
 function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
@@ -27,7 +27,12 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
       className={todo.isComplete ? "todo-row complete" : "todo-row"}
       key={index}
     >
-      <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+      <div
+        key={todo.id}
+        style={{ display: "flex", alignItems: "center" }}
+        onClick={() => completeTodo(todo.id)}
+      >
+        <BsCheckCircle style={{ marginRight: "10px", cursor: "pointer" }} />
         {todo.text}
       </div>
       <div className="icons">
@@ -35,7 +40,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
           onClick={() => removeTodo(todo.id)}
           className="delete-icon"
         />
-        <TiEdit
+        <BsPencilSquare
           onClick={() => setEdit({ id: todo.id, value: todo.text })}
           className="edit-icon"
         />

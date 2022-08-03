@@ -7,11 +7,11 @@
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    rgba(48, 16, 255, 1) 0%,
-    rgba(100, 115, 255, 1) 100%
-  );
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+  width: 100vw;
+  height: 100vh;
 }
 .todo-app {
   display: flex;
@@ -44,7 +44,7 @@ h1 {
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #5d0cff;
+  border: 2px solid #d387ab;
   outline: none;
   width: 320px;
   background: transparent;
@@ -61,11 +61,8 @@ h1 {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
+  background-color: #e899dc;
+  background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
   color: #fff;
   text-transform: capitalize;
 }
@@ -95,11 +92,8 @@ h1 {
   align-items: center;
   margin: 4px auto;
   color: #fff;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 118, 20, 1) 0%,
-    rgba(255, 84, 17, 1) 100%
-  );
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
 
   padding: 16px;
   border-radius: 5px;
@@ -107,27 +101,18 @@ h1 {
 }
 
 .todo-row:nth-child(4n + 1) {
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 }
 
 .todo-row:nth-child(4n + 2) {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 12, 241, 1) 0%,
-    rgba(250, 0, 135, 1) 100%
-  );
+  background-color: #d5adc8;
+  background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
 }
 
 .todo-row:nth-child(4n + 3) {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
 }
 
 .icons {
@@ -138,10 +123,18 @@ h1 {
 }
 
 .delete-icon {
-  margin-right: 5px;
+  margin-right: 10px;
   color: #fff;
 }
 
 .edit-icon {
   color: #fff;
+}
+
+.signature {
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  font-weight: bold;
 }

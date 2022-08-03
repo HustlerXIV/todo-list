@@ -3,7 +3,16 @@ import Todo from "./Todo";
 import TodoForm from "./TodoForm";
 
 function TodoList() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([
+    {
+      id: 1,
+      text: "Hang out with friends",
+    },
+    {
+      id: 2,
+      text: "Wash the dishes",
+    },
+  ]);
 
   const addTodo = (todo) => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
@@ -41,7 +50,7 @@ function TodoList() {
   };
   return (
     <div>
-      <h1>What's the plan for today?</h1>
+      <h1>What do you have to do today?</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
